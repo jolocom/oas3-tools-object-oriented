@@ -25,24 +25,28 @@ yarn add oas3-tools-object-oriented
 
 ## Usage
 
-1. Implement ['Oas3ToolsObjectOrientedOptions'][3] interface to configure ['oas3-tools'][1] if necessary:
+1. Implement ['Oas3ToolsObjectOrientedConfig'][3] interface to configure ['oas3-tools'][1] if necessary,
+and path to the oas3 declaration file:
 
 ```javascript
 import { Oas3ToolsObjectOrientedOptions } from '@jolocom/oas3-tools-object-oriented'
 
-const config: Oas3ToolsObjectOrientedOptions = {
-  openApiValidator: {
-    apiSpec: '3.0.0',
-    // ...other validator configuration oprions  
-  },
-  logging: {
-    errorLimit: 400,
-    // ...other logging configuration oprions  
-  },
-  swaggerUI: {
-    swaggerUIPath: '/docs',
-    // ...other swaggerUI configuration oprions  
-  },
+const config: Oas3ToolsObjectOrientedConfig = {
+  oas3DeclarationFilePath: './api/openapi.yaml',
+  oas3AppOptions: {
+    openApiValidator: {
+      apiSpec: '3.0.0',
+      // ...other validator configuration oprions
+    },
+    logging: {
+      errorLimit: 400,
+      // ...other logging configuration oprions
+    },
+    swaggerUI: {
+      swaggerUIPath: '/docs',
+      // ...other swaggerUI configuration oprions
+    },
+  }
 }
 ```
 
