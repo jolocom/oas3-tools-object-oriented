@@ -36,15 +36,15 @@ const config: Oas3ToolsObjectOrientedConfig = {
   oas3AppOptions: {
     openApiValidator: {
       apiSpec: '3.0.0',
-      // ...other validator configuration oprions
+      // ...other validator configuration options
     },
     logging: {
       errorLimit: 400,
-      // ...other logging configuration oprions
+      // ...other logging configuration options
     },
     swaggerUI: {
       swaggerUIPath: '/docs',
-      // ...other swaggerUI configuration oprions
+      // ...other swaggerUI configuration options
     },
   }
 }
