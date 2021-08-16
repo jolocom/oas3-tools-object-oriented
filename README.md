@@ -35,7 +35,7 @@ const config: Oas3ToolsObjectOrientedConfig = {
   oas3DeclarationFilePath: './api/openapi.yaml',
   oas3AppOptions: {
     openApiValidator: {
-      apiSpec: '3.0.0',
+      apiSpec: './api/openapi.yaml',
       // ...other validator configuration options
     },
     logging: {
