@@ -65,7 +65,7 @@ const controllers: object[] = [/** Controllers instances collection */]
 
 app.use(oas3ToolsObjectOriented(controllers, config))
 
-// ...end of middlares and app initialization process
+// ...end of middlewares and app initialization process
 ```
 
 ## License
