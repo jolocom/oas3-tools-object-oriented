@@ -6,10 +6,16 @@ export interface NameToControllerMap {
   [className: string]: object
 }
 
+export interface Oas3ToolsObjectOrientedRoutingOptions {
+  ignoreMissingHandlers: boolean
+  useStubs: boolean
+}
+
 export interface Oas3ToolsObjectOrientedOptions {
-  openApiValidator: OpenApiValidatorOpts;
-  logging: LoggingOptions;
-  swaggerUI: SwaggerUiOptions;
+  routing: Oas3ToolsObjectOrientedRoutingOptions
+  openApiValidator: OpenApiValidatorOpts
+  logging: LoggingOptions
+  swaggerUI: SwaggerUiOptions
 }
 
 export interface Oas3ToolsObjectOrientedConfig {
