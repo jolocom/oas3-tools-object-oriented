@@ -1,0 +1,22 @@
+{
+  "name": "@jolocom/oas3-tools-object-oriented",
+  "version": "0.1.1",
+  "main": "js/index.js",
+  "author": "Serhii Temchenko <serg.temchenko@gmail.com>",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "js"
+  ],
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "oas3-tools": "^2.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
