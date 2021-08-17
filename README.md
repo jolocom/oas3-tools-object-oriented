@@ -34,6 +34,10 @@ import { Oas3ToolsObjectOrientedOptions } from '@jolocom/oas3-tools-object-orien
 const config: Oas3ToolsObjectOrientedConfig = {
   oas3DeclarationFilePath: './api/openapi.yaml',
   oas3AppOptions: {
+    routing: {
+      ignoreMissingHandlers: true,
+      useStubs: true,
+    },
     openApiValidator: {
       apiSpec: './api/openapi.yaml',
       // ...other validator configuration options

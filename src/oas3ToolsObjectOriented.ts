@@ -29,7 +29,9 @@ export const oas3ToolsObjectOriented = (controllers: object[], configuration: Oa
   const oas3ToControllerMethodMap = createOas3ToControllerMethodMap(controllers)
   const oas3AppConfig = oas3Tools.expressAppConfig(
     configuration.oas3DeclarationFilePath,
-    { routing: {controllers: oas3ToControllerMethodMap}, ...configuration.oas3AppOptions }
+    { ...configuration.oas3AppOptions,
+      routing: { ...configuration.oas3AppOptions.routing, controllers: oas3ToControllerMethodMap }
+    }
   )
 
   return oas3AppConfig.getApp()
