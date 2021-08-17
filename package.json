@@ -1,6 +1,6 @@
 {
   "name": "@jolocom/oas3-tools-object-oriented",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "js/index.js",
   "author": "Serhii Temchenko <serg.temchenko@gmail.com>",
   "license": "Apache-2.0",
