@@ -14,7 +14,7 @@
     "build": "tsc -p ./tsconfig.json"
   },
   "dependencies": {
-    "oas3-tools": "^2.2.3"
+    "oas3-tools": "jolocom/oas3-tools#oas3-tools-v2.2.0-gitpkg"
   },
   "devDependencies": {
     "typescript": "^4.3.5"

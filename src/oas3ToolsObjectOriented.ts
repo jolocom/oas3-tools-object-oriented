@@ -31,7 +31,8 @@ export const oas3ToolsObjectOriented = (controllers: object[], configuration: Oa
     configuration.oas3DeclarationFilePath,
     { ...configuration.oas3AppOptions,
       routing: { ...configuration.oas3AppOptions.routing, controllers: oas3ToControllerMethodMap }
-    }
+    },
+    configuration.customMiddlewares
   )
 
   return oas3AppConfig.getApp()
